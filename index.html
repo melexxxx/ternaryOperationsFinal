@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+    <!-- Main content section with the class "ternary" -->
+    <section class="ternary">
+        <h1>Ternary operation</h1>
+        <p>Voter Must be at least 18 Years of age!</p>
+        <!-- Input element for age -->
+        <input id="age" name="age" type="number" min="0" max="99" value="18">
+        <!-- Button to check age -->
+        <button onclick="ageCheck()">Check Age!</button>
+        <!-- Paragraph to display the age check result -->
+        <p id="ageReturn" name="ageReturn"></p>
+    </section>
+    <!-- Container for the "voteCaster" section (initially hidden) -->
+    <div id="voteCasterContainer" style="display: none;">
+        <!-- "voteCaster" section with the ID "voteCaster" -->
+        <section name="voteCaster" id="voteCaster">
+            <h1>Constructors</h1>
+            <br>
+            <!-- Input for the first name -->
+            <input type="text" name="firstName" id="firstName" placeholder="Name">
+            <br>
+            <br>
+            <!-- Input for the last name -->
+            <input type="text" name="lastName" id="lastName" placeholder="Surname">
+            <br>
+            <!-- Radio button for selecting "Red" -->
+            <label>
+                <input type="radio" name="vote" value="red">
+                Red
+            </label>
+            <br>
+            <!-- Radio button for selecting "Blue" -->
+            <label>
+                <input type="radio" name="vote" value="blue">
+                Blue
+            </label>
+            <!-- Button to trigger the "voter" function -->
+            <button onclick="voter()">CLICK!</button>
+            <!-- Paragraph to display the voter information -->
+            <p id="constructor" name="constructor"></p>
+        </section>
+    </div>
+    <!-- Include an external JavaScript file -->
+    <script src="./JSON/main.js"></script>
+</body>
+</html>
